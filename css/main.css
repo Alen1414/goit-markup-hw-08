@@ -53,13 +53,6 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -93,7 +86,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav__logo {
-  margin-right: 93px;
   color: #2196F3;
   font-family: "Rolway", sans-serif;
   font-weight: bold;
@@ -130,17 +122,10 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #2196F3;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 .site-nav {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
   line-height: 1.2;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -154,10 +139,8 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #2196f3;
 }
 
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.main-nav {
+  color: green;
 }
 
 .site-nav__item-nav {
@@ -189,10 +172,6 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
 }
 
-.site-nav__item-nav {
-  display: flex;
-}
-
 .site-nav__email {
   margin-right: 10px;
   fill: currentColor;
@@ -206,10 +185,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .site-nav__phone:hover {
   fill: #2196F3;
-}
-
-.site-nav__item-site {
-  display: flex;
 }
 
 .site-nav__item-text {
@@ -282,8 +257,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .perfomance {
-  display: flex;
-  justify-content: center;
   margin-left: auto;
   margin-bottom: 30px;
 }

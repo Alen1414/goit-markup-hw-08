@@ -176,6 +176,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: #2196f3;
 }
 
+.main-nav {
+  color: green;
+}
+
 .site-nav__item-nav {
   display: block;
   position: relative;
