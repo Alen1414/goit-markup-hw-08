@@ -189,6 +189,13 @@ p, h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/foto-hero.jpeg);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    max-width: 1600px;
+  }
+}
+
 .hero__baner {
   font-size: 26px;
   font-weight: 700;
@@ -240,14 +247,28 @@ p, h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 1200px) {
+  .box-position {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .perfomance {
   margin-left: auto;
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .perfomance {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .perfomance__icon {
-  padding: 25px 100px 25px 100px;
-  width: 270px;
+  padding: 25px 192px 25px 192px;
+  width: 450px;
   height: 120px;
   border: 1px transpontant;
   background: #F5F4FA;
@@ -256,6 +277,22 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .perfomance__icon:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .perfomance__icon {
+    width: 354px;
+    height: 120px;
+    padding: 25px 143px 25px 143px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .perfomance__icon {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px 25px 100px;
+  }
 }
 
 .perfomance-company {
@@ -274,16 +311,42 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .perfomance-company {
+    display: flex;
+  }
+}
+
 .perfomance-company__tittle {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
   padding-bottom: 10px;
+  line-height: calc(14px/16px);
 }
 
 .perfomance-company__tittle-text {
   font-size: 14px;
-  line-height: 1.7;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: calc(14px/24px);
   color: #757575;
   text-transform: none;
-  margin-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .perfomance-company__tittle-text {
+    margin-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .perfomance-company__text {
+    flex-basis: calc(100%/4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .about {
