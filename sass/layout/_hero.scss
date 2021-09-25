@@ -11,6 +11,8 @@
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/foto-hero.jpeg);
 
+  @media screen and (min-width:1200px) {
+    max-width: 1600px;
 }
 
 .hero__baner {
@@ -28,8 +30,8 @@
 
 @media screen and (min-width:1200px) {
   width: 1200px;
-  
- @include font($fz:16px, $fw:400, $ls:0.02em)
+ 
+@include font($fz:44px, $fw:900, $ls:0.06em)
 }
 
 
