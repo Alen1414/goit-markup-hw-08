@@ -6,13 +6,22 @@
     margin: 0;
     @media screen and (min-width:768px){
    display: flex;
-   flex: wrap;
+
+   margin-left: -30px;
+   margin-top: -30px;
+   padding-bottom: 60px;
+   margin-bottom: 60px;
+
     }
     @media screen and (min-width:1200px){
+      flex: wrap;
     margin-left: -30px;
     margin-top: -30px;
     padding-bottom: 94px;
     margin-bottom: 94px;
+
+   
+    
     }
   }
    
@@ -32,27 +41,22 @@
          margin-top: 30px; 
       }
     
-    .title-stuf{
+    .title-stuf {
     text-align: center;
-    padding: auto;
-   
-    padding-top: 60px;
+    // padding: auto;
+   padding-top: 60px;
     padding-bottom: 30px;
-
-    @media screen and (min-width:768px){
-
-    }
     @media screen and (min-width:1200px){
-       padding-top: 94px;
+    padding-top: 94px;
     padding-bottom: 50px ;
     }
+   }
    
-    }
   .stuf-block__socials{
     display: flex;
     justify-content: center;
     padding-bottom: 24px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
   .stuf-block__name{
     @include font( 16px, 500,0.03em); 

@@ -432,12 +432,16 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 768px) {
   .stuf-block {
     display: flex;
-    flex: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .stuf-block {
+    flex: wrap;
     margin-left: -30px;
     margin-top: -30px;
     padding-bottom: 94px;
@@ -469,7 +473,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .stuf-block__photo .title-stuf {
   text-align: center;
-  padding: auto;
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -485,7 +488,6 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
-  margin-bottom: 30px;
 }
 
 .stuf-block__photo .stuf-block__name {
