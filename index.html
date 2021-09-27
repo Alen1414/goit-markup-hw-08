@@ -101,7 +101,7 @@
    </section>
 
      <!--примеры работ-->
-     <section>
+     <section class="none">
         <div class="container">
         <h2 class="about">Чем мы занимаемся</h2>
         <ul class="about-list">
@@ -162,6 +162,7 @@
                </picture>
                  <h3 class="stuf-block__name">Игорь Демьяненко</h3>
                 <p lang="en" class="stuf-block__position">Product Designer</p>
+
                 <ul class="stuf-block__socials">
                     
                     <li class="social-item">
@@ -195,12 +196,39 @@
                             </svg>
                         </a>
                     </li>
+
                 </ul>
                 </div>
 
             <li class="stuf-block__photo">
                 <div>
-                <img src="./images/compressjpeg/foto2-min.jpeg" alt="сотрудник Ольга Репина" width="270" height="260">
+                    <div>
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/comp/imgolga-min.jpg 1x,
+                            ./images/comp/imgolga-1-min.jpg 2x,
+                            "
+                            media="(min-width:1200px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/tablet/imgolga-min.jpg 1x,
+                            ./images/tablet/imgolga-1-min.jpg 2x,
+                            "
+                            media="(min-width:768px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/mob-vers/olga1x-min.jpg 1x,
+                            ./images/mob-vers/olga2x-min.jpg 2x,
+                            "
+                            media="(min-width:480px)"
+                            />
+                            <img src="./images/compressjpeg/foto2-min.jpeg"
+                             alt="сотрудник Ольга Репина" >
+                 </picture>
+                
                 <h3 class="stuf-block__name">Ольга Репина</h3>
                <p lang="en" class="stuf-block__position">Frontend Developer</p>
                 
@@ -242,7 +270,32 @@
             </li>
             <li class="stuf-block__photo">
                 <div>
-                <img src="./images/compressjpeg/foto3-min.jpeg" alt="сотрудник Николай Тарасов" width="270" height="260">
+                    <picture>
+                        <source
+                        srcset="
+                        ./images/comp/imgniko-min.jpg 1x,
+                        ./images/comp/imgniko-1-min.jpg 2x,
+                        "
+                        media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./images/tablet/imgniko-min.jpg 1x,
+                        ./images/tablet/imgniko-1-min.jpg 2x,
+                        "
+                        media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                        ./images/mob-vers/nicolay1x-min.jpg 1x,
+                        ./images/mob-vers/nicolay2xpng-min.jpg 2x,
+                        "
+                        media="(min-width:480px)"
+                        />
+                       <img src="./images/compressjpeg/foto3-min.jpeg" 
+                       alt="сотрудник Николай Тарасов"> 
+             </picture>
+                
                 <h3 class="stuf-block__name">Николай Тарасов</h3>
                 <p lang="en" class="stuf-block__position">Marketing</p>  
 
@@ -283,7 +336,33 @@
             </li>
     <li class="stuf-block__photo">
         <div>
-        <img src="./images/compressjpeg/foto4-min.jpeg" alt="сотрудник Михаил Ермаков" width="270" height="260">
+            <picture>
+                <source
+                srcset="
+                ./images/comp/imgmixa-min.jpg 1x,
+                ./images/comp/imgmixa-1-min.jpg 2x,
+                "
+                media="(min-width:1200px)"
+                />
+                <source
+                srcset="
+                ./images/tablet/imgmixa-min.jpg 1x,
+                ./images/tablet/imgmixa-1-min.jpg 2x,
+                "
+                media="(min-width:768px)"
+                />
+                <source
+                srcset="
+                ./images/mob-vers/mixa1x-min.jpg 1x,
+                ./images/mob-vers/mixa2x-min.jpg 2x,
+                "
+                media="(min-width:480px)"
+                />
+               <img src="./images/compressjpeg/foto4-min.jpeg" 
+        alt="сотрудник Михаил Ермаков" >
+     </picture>
+            
+        
         <h3 class="stuf-block__name">Михаил Ермаков</h3>
         <p lang="en" class="stuf-block__position">UI Designer</p>  
 

@@ -6,7 +6,7 @@
   }
     
 .perfomance{
-    
+ 
   margin-left: auto;
   margin-bottom: 30px;
 
@@ -51,13 +51,17 @@
   
   @media screen and (min-width:768px) {
     display: flex;
+    flex-wrap: wrap;
     // font-size: 14px;
     // line-height: 1.1;
     // text-transform: uppercase;
     padding: 0;
-    margin: 0;
+    
+    
     margin-left: -30px;
     margin-top: -30px;
+    margin-bottom: 30px;
+    margin-top: 0px;
   }
     
   }
@@ -85,6 +89,11 @@
   .perfomance-company__text {
     @media screen and (min-width: 768px) {
       flex-basis: calc(100%/2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px; 
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100%/4 - 30px);
       margin-left: 30px;
       margin-top: 30px; 
     }
