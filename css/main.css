@@ -299,22 +299,16 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-left: -30px;
   margin-top: -30px;
-}
-
-.perfomance-company__text {
-  flex-basis: calc(100%/4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .perfomance-company {
-    display: flex;
-  }
 }
 
 .perfomance-company__tittle {
@@ -333,6 +327,7 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: calc(14px/24px);
   color: #757575;
   text-transform: none;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -341,9 +336,9 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .perfomance-company__text {
-    flex-basis: calc(100%/4 - 30px);
+    flex-basis: calc(100%/2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }

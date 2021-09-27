@@ -135,8 +135,32 @@
           <ul class="stuf-block">
               <li class="stuf-block__photo ">
                   <div>
-                 <img src="./images/compressjpeg/foto1-min.jpeg" alt="сотрудник Игорь Демьяненко" width="270" height="260">
-                <h3 class="stuf-block__name">Игорь Демьяненко</h3>
+                      <picture>
+                          <source
+                          srcset="
+                          ./images/comp/igor-min.jpg 1x,
+                          ./images/comp/igor-1-min.jpg 2x,
+                          "
+                          media="(min-width:1200px)"
+                          />
+                          <source
+                          srcset="
+                          ./images/tablet/imgigor-min.jpg 1x,
+                          ./images/tablet/imgigor-1-min.jpg 2x,
+                          "
+                          media="(min-width:768px)"
+                          />
+                          <source
+                          srcset="
+                          ./images/mob-vers/igor1x-min.jpg 1x,
+                          ./images/mob-vers/igor2x-min.jpg 2x,
+                          "
+                          media="(min-width:480px)"
+                          />
+                           <img src="./images/compressjpeg/foto1-min.jpeg"
+                  alt="сотрудник Игорь Демьяненко" >
+               </picture>
+                 <h3 class="stuf-block__name">Игорь Демьяненко</h3>
                 <p lang="en" class="stuf-block__position">Product Designer</p>
                 <ul class="stuf-block__socials">
                     
