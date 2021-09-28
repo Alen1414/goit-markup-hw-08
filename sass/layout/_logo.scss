@@ -1,14 +1,23 @@
+
+.main-nav{
+  
+  padding-top: 16px;
+padding-bottom: 16px;
+
+
+}
 .main-nav__logo {
 
    
        color: #2196F3 ;
        font-family: "Rolway", sans-serif;
        font-weight: bold;
-       font-size: 26px;
+       font-size: 24px;
        line-height: 1.20; 
        text-decoration: none;
        animation: shake 100ms linear  1;
-     }
+
+       }
     
     .main-nav__logo-dark {
       color: var(--primary-text-color);
@@ -17,3 +26,126 @@
     .main-nav__logo-light{
       color: var(--white-color-text);
     }
+    .mob-menu{
+      display: flex;
+  flex-wrap: wrap;
+ flex-direction: column;
+  align-content: space-between;
+      
+    } 
+    .mob-modal__open{
+      padding: 0;
+    }
+.mob-menu__icon{
+  border-color: transparent;
+  background-color: #FFFFFF;
+ 
+
+}
+ .mob-modal{
+  
+
+  width: 100vw;
+  height: 796px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 21px;
+  padding-right: 25px;
+  padding-left: 40px;
+
+  background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.mob-modal__list{
+  padding-top: 48px;
+  // padding-bottom: 302px;
+}
+.mob-modal__item{
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 0.97;
+letter-spacing: 0.02em;
+
+}
+.mob-modal__item:not(:last-child){
+  padding-bottom: 35px;
+}
+
+.mob-modal__link{
+  display: block;
+  text-decoration: none;
+  color:  #212121;
+}
+.mob-modal__close{
+  display: block;
+background-color: #FFFFFF;
+border: none;
+color:#212121;
+margin-left:  auto;
+padding-right: 25px;
+}
+.mob-modal__nav_tel{
+font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+
+letter-spacing: 0.02em;
+
+
+}
+.madal_link-tel{
+display: block;
+ color: #2196F3; 
+ text-decoration: none;
+
+}
+
+.mob-modal__sicials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0 auto;
+  padding-top: 62px;
+}
+.mob-modal__nav_email{
+  font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+
+
+}
+.madal_link-email{
+  display: block;
+ color: #757575;
+ text-decoration: none;
+ padding-top: 32px;
+}
+
+.mob-modal__sicials_item{ 
+
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+}
+
+.mob-modal__sicials_item:not(:last-child){
+padding-right: 20px;
+}
+.madal_link{
+  display: block;
+  text-decoration: none;
+  padding-bottom: 48px;
+  color: #2196F3;
+}
+
+.mob-modal  .is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

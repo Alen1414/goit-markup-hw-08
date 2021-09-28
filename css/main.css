@@ -110,11 +110,16 @@ p, h1, h2, h3, h4, h5, h6 {
   fill: currentColor;
 }
 
+.main-nav {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .main-nav__logo {
   color: #2196F3;
   font-family: "Rolway", sans-serif;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.20;
   text-decoration: none;
   animation: shake 100ms linear  1;
@@ -126,6 +131,127 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .main-nav__logo-light {
   color: var(--white-color-text);
+}
+
+.mob-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.mob-modal__open {
+  padding: 0;
+}
+
+.mob-menu__icon {
+  border-color: transparent;
+  background-color: #FFFFFF;
+}
+
+.mob-modal {
+  width: 100vw;
+  height: 796px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 21px;
+  padding-right: 25px;
+  padding-left: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.mob-modal__list {
+  padding-top: 48px;
+}
+
+.mob-modal__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 0.97;
+  letter-spacing: 0.02em;
+}
+
+.mob-modal__item:not(:last-child) {
+  padding-bottom: 35px;
+}
+
+.mob-modal__link {
+  display: block;
+  text-decoration: none;
+  color: #212121;
+}
+
+.mob-modal__close {
+  display: block;
+  background-color: #FFFFFF;
+  border: none;
+  color: #212121;
+  margin-left: auto;
+  padding-right: 25px;
+}
+
+.mob-modal__nav_tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.madal_link-tel {
+  display: block;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.mob-modal__sicials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0 auto;
+  padding-top: 62px;
+}
+
+.mob-modal__nav_email {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.madal_link-email {
+  display: block;
+  color: #757575;
+  text-decoration: none;
+  padding-top: 32px;
+}
+
+.mob-modal__sicials_item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.mob-modal__sicials_item:not(:last-child) {
+  padding-right: 20px;
+}
+
+.madal_link {
+  display: block;
+  text-decoration: none;
+  padding-bottom: 48px;
+  color: #2196F3;
+}
+
+.mob-modal .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .social-link {
@@ -151,6 +277,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  display: none;
   line-height: 1.2;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -162,6 +289,50 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .site-nav.link.current {
   color: #2196f3;
+}
+
+.site-nav__item-nav {
+  display: block;
+  position: relative;
+}
+
+.site-nav__item-nav::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__item-nav:focus:after {
+  opacity: 1;
+}
+
+.site-nav__item-nav {
+  margin-left: 50px;
+}
+
+.site-nav__item-nav:first-child {
+  margin-left: 0px;
+}
+
+.site-nav__email {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.site-nav__phone {
+  fill: currentColor;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.site-nav__phone:hover {
+  fill: #2196F3;
 }
 
 .site-nav__item-text {
@@ -181,17 +352,16 @@ p, h1, h2, h3, h4, h5, h6 {
   background-color: var(--background-second-color);
   padding-top: 118px;
   padding-bottom: 198px;
-  padding-left: 0px;
-  padding-right: 0px;
   margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/foto-hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
     max-width: 1600px;
     margin-bottom: 94px;
   }
