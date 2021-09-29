@@ -3,14 +3,14 @@
   
   padding-top: 16px;
 padding-bottom: 16px;
-
-
+}
+.box{
+  position: fixed;
+  bottom: 0;
 }
 .main-nav__logo {
-
-   
-       color: #2196F3 ;
-       font-family: "Rolway", sans-serif;
+color: #2196F3 ;
+ font-family: "Rolway", sans-serif;
        font-weight: bold;
        font-size: 24px;
        line-height: 1.20; 
@@ -43,8 +43,6 @@ padding-bottom: 16px;
 
 }
  .mob-modal{
-  
-
   width: 100vw;
   height: 796px;
   position: fixed;
@@ -57,10 +55,13 @@ padding-bottom: 16px;
   background: #FFFFFF;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
-.mob-modal__list{
-  padding-top: 48px;
-  // padding-bottom: 302px;
+.mob-modal__item.mob-modal__link:hover{
+  color: #2196F3;
 }
+.mob-modal__item.mob-modal__link:focus{
+  color: #2196F3;
+}
+
 .mob-modal__item{
 font-style: normal;
 font-weight: 500;
@@ -86,6 +87,9 @@ color:#212121;
 margin-left:  auto;
 padding-right: 25px;
 }
+.mob-modal__nav{
+ 
+}
 .mob-modal__nav_tel{
 font-weight: 500;
 font-size: 34px;
@@ -103,11 +107,12 @@ display: block;
 }
 
 .mob-modal__sicials{
+  padding-top: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0 auto;
-  padding-top: 62px;
+  
+ 
 }
 .mob-modal__nav_email{
   font-style: normal;

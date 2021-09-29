@@ -1,5 +1,10 @@
 .pd{
-    padding-bottom: 94px;
+    padding-bottom: 40px;
+
+
+    @media screen and (min-width:1200px) {
+      padding-bottom: 94px;
+  }
   }
   .card{
     
@@ -12,17 +17,28 @@
   
   }
   .card-set-button{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    @media screen and (min-width:1200px){
+
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+  
     padding-bottom: 50px;
     padding-top: 94px;
-    
+  }
    }
    
   .button-portfoli{
+  margin-bottom: 21px;
   margin-right: 8px;
   height: 38px;
   font-style: normal;
@@ -42,8 +58,10 @@
     color: var(--white-color-text);
   background-color:var(--second-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
-    
+   }
+   @media screen and (min-width:1200px){
+   margin-bottom: 0px;
+   }
   }
   
   
