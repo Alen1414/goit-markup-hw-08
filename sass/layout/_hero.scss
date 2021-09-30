@@ -75,11 +75,14 @@
   text-transform: uppercase;
   color: var(--white-color-text);
 
-
+  @media screen and (min-width:768px) {
+    @include font($fz:26px, $fw:900, $ls:0.06em);
+    line-height: 1.6;
+    max-width: 360px;
+  }
 @media screen and (min-width:1200px) {
-  width: 1200px;
- 
 @include font($fz:44px, $fw:900, $ls:0.06em)
+max-width: 600px;
 }
 }
 

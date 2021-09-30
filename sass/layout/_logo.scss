@@ -1,14 +1,29 @@
 
+
+  .flex-center {
+    @media screen and (min-width:768px){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+}
 .main-nav{
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
 padding-bottom: 16px;
+@media screen and (min-width:768px){
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
-.box{
-  position: fixed;
-  bottom: 0;
+@media screen and (min-width:1200px){
+  
 }
+}
+
 .main-nav__logo {
 color: #2196F3 ;
  font-family: "Rolway", sans-serif;
@@ -32,7 +47,12 @@ color: #2196F3 ;
   flex-wrap: wrap;
  flex-direction: column;
   align-content: space-between;
-      
+  @media screen and (min-width:768px){
+display: none;
+  }
+  @media screen and (min-width:1200px){
+    display: none;
+  }
     } 
     .mob-modal__open{
       padding: 0;
@@ -87,6 +107,17 @@ border: none;
 color:#212121;
 margin-left:  auto;
 padding-right: 25px;
+}
+.box{
+  position: fixed;
+  bottom: 0;
+  @media screen and (min-width:768px){
+display: none;
+  }
+  @media screen and (min-width:1200px){
+    display: none;
+  }
+  
 }
 .mob-modal__nav{
  
