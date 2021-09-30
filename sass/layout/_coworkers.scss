@@ -1,9 +1,28 @@
+
 .main-fon{
     background: #F5F4FA;
+
    }
+   .title-stuf {
+    @include font(28px, 700, 0.03em);
+    font-style: normal;
+    line-height: 1.17;
+    text-align: center;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+     
+ 
+     @media screen and (min-width:1200px){
+     padding-top: 94px;
+     padding-bottom: 50px ;
+     }
+    }
+    
   .stuf-block {
-    padding: 0;
+    padding-bottom: 60px;
     margin: 0;
+    
     @media screen and (min-width:768px){
    display: flex;
 
@@ -26,6 +45,10 @@
   }
    
    .stuf-block__photo {
+    margin-bottom: 30px;
+    width: 450px;
+    height: 622px;
+    
         border-radius: 0px 0px 4px 4px;
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -41,18 +64,7 @@
          margin-top: 30px; 
       }
     
-    .title-stuf {
-
-    text-align: center;
-   padding-top: 60px;
-    padding-bottom: 30px;
-    
-    @media screen and (min-width:1200px){
-    padding-top: 94px;
-    padding-bottom: 50px ;
-    }
-   }
-   
+  
   .stuf-block__socials{
     display: flex;
     justify-content: center;

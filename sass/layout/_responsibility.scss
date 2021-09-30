@@ -1,4 +1,6 @@
 .box-position{ 
+  margin: auto;
+  padding: 0;
   @media screen and (min-width:1200px) {
     display: flex;
     justify-content: center;
@@ -42,12 +44,12 @@
   
  
   .perfomance-company{
-   
+  width: 100%; 
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   padding-bottom: 30px;
-  margin: 0;
+
   
   @media screen and (min-width:768px) {
     display: flex;
