@@ -127,6 +127,13 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
 .main-nav__logo {
   color: #2196F3;
   font-family: "Rolway", sans-serif;
@@ -135,6 +142,12 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.20;
   text-decoration: none;
   animation: shake 100ms linear  1;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__logo {
+    margin-right: 93px;
+  }
 }
 
 .main-nav__logo-dark {
@@ -472,8 +485,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 94px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comp/comphero1x.jpg);
   }
 }
@@ -512,7 +533,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 44px;
     font-weight: 900;
     letter-spacing: 0.06em;
-    max-width: 600px;
+    max-width: 650px;
   }
 }
 
@@ -624,8 +645,9 @@ p, h1, h2, h3, h4, h5, h6 {
   .perfomance-company {
     margin-left: -30px;
     margin-top: -30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     margin-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -780,11 +802,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1200px) {
   .stuf-block {
-    flex: wrap;
+    padding: 0;
+    margin: 0;
     margin-left: -30px;
     margin-top: -30px;
     padding-bottom: 94px;
-    margin-bottom: 94px;
   }
 }
 
@@ -802,6 +824,16 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 354px;
     height: 536px;
     flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stuf-block__photo {
+    width: 270px;
+    height: 428px;
+    flex-basis: -5%;
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -878,6 +910,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .client__icon {
     justify-content: center;
     margin-bottom: 94px;
+    padding-bottom: 0px;
   }
 }
 
@@ -933,6 +966,19 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .footer-nav__logo {
