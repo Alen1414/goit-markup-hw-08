@@ -30,8 +30,8 @@ color: #212121;
   left: 50%;
   transform: translate(-50%, -50%);
   
-    min-width: 528px;
-    min-height: 581px;
+  width: 450px;
+  height: 609px;
     
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -42,6 +42,18 @@ color: #212121;
   &:hover{
     fill: #2196F3;
   } 
+  @media screen and (min-width:768px){
+    width: 450px;
+   height: 609px;
+  }
+
+    @media screen and (min-width:1200px){
+      min-width: 528px;
+      min-height: 581px;
+    }
+
+
+
   }
   
   .modal__btn-open{
@@ -69,13 +81,20 @@ fill:#212121;
   }
 
 .modal-form__placeholder{
-width: 448px;
+
+width: 370px;
 height: 40px;
 
 padding-left: 42px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 transition: border cubic-bezier(0.4, 0, 0.2, 1) ;
+@media screen and (min-width:768px){
+width: 370px;
+}
+  @media screen and (min-width:1200px){
+    width: 448px;
+  }
 
 }
 

@@ -3,6 +3,7 @@
   .flex-center {
     @media screen and (min-width:768px){
     display: flex;
+   
     align-items: center;
     justify-content: space-between;
 
@@ -57,6 +58,12 @@ display: none;
   }
   @media screen and (min-width:1200px){
     display: none;
+  }
+  .mob-button{
+    margin-left: 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #FFFFFF;
   }
     } 
     .mob-modal__open{
@@ -166,7 +173,10 @@ letter-spacing: 0.02em;
  text-decoration: none;
  padding-top: 32px;
 }
-
+.socials-line{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+transform: rotate(90deg);
+}
 .mob-modal__sicials_item{ 
 
 font-style: normal;
