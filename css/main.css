@@ -968,7 +968,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 786px) {
   .footer-nav {
     display: flex;
   }
@@ -976,6 +976,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1200px) {
   .footer-nav {
+    align-items: flex-start;
+    text-align: start;
     display: flex;
     flex-direction: row;
   }
