@@ -43,12 +43,18 @@ align-items: center;
   // display: flex;
   // align-items: center;
   @media screen and (min-width:768px){
+   
     display: block;
    padding-top: 0;
    padding-bottom: 0;
    margin-right: 0;
   }
-  
+}
+  .flex-phon-email{
+    @media screen and (min-width:768px){  
+display: flex;
+flex-wrap: wrap;
+  }
  }
      .site-nav__item-nav{
       @media screen and (min-width:768px){
@@ -125,5 +131,5 @@ transition-property: background-color 250ms cubic-bezier(
     align-items: center;
     justify-content: center;
   }
-
-                   }
+        }
+                   

@@ -103,7 +103,7 @@ p, h1, h2, h3, h4, h5, h6 {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .flex-center {
     display: flex;
     align-items: center;
@@ -307,7 +307,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .mob-modal__sicials_item:not(:last-child) {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .madal_link {
@@ -401,6 +401,13 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-phon-email {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -828,11 +835,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1200px) {
   .stuf-block {
+    display: flex;
+    flex-wrap: nowrap;
     padding: 0;
     margin: 0;
     margin-left: -30px;
     margin-top: -30px;
     padding-bottom: 94px;
+    margin-bottom: 94px;
   }
 }
 
@@ -1138,6 +1148,12 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-fallow {
+    margin: 0;
+  }
+}
+
 .footer-fallow__place-txt {
   position: relative;
 }
@@ -1157,6 +1173,12 @@ p, h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 768px) {
   .footer-fallow__text {
     padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-fallow__text {
+    padding-top: 0px;
   }
 }
 

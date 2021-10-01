@@ -2,10 +2,16 @@
 
   .flex-center {
     @media screen and (min-width:768px){
+
+    }
+
+    @media screen and (min-width:1200px){
     display: flex;
    
     align-items: center;
     justify-content: space-between;
+
+    
 
     }
   
@@ -187,13 +193,14 @@ letter-spacing: 0.02em;
 }
 
 .mob-modal__sicials_item:not(:last-child){
-padding-right: 20px;
+padding-right: 10px;
 }
 .madal_link{
   display: block;
   text-decoration: none;
   padding-bottom: 48px;
   color: #2196F3;
+ 
 }
 
 .mob-modal.is-hidden{
