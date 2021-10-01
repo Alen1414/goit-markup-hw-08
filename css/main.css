@@ -137,6 +137,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1200px) {
   .main-nav {
+    isplay: flex;
+    align-items: center;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -372,8 +374,9 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
+    display: flex;
     align-items: center;
   }
 }
