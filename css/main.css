@@ -1488,26 +1488,26 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 40px;
 }
 
-.modal__icon-close {
-  transition: fill cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__icon-close:hover {
-  fill: #2196F3;
-}
-
 @media screen and (min-width: 768px) {
-  .modal__icon-close {
+  .modal {
     width: 450px;
     height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .modal__icon-close {
+  .modal {
     min-width: 528px;
     min-height: 581px;
   }
+}
+
+.modal__icon-close {
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__icon-close:hover {
+  fill: #2196F3;
 }
 
 .modal__btn-open {

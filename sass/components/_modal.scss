@@ -36,12 +36,6 @@ color: #212121;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;padding: 40px;
-  } 
-  .modal__icon-close{
-  transition: fill  cubic-bezier(0.4, 0, 0.2, 1) ;
-  &:hover{
-    fill: #2196F3;
-  } 
   @media screen and (min-width:768px){
     width: 450px;
    height: 609px;
@@ -52,8 +46,12 @@ color: #212121;
       min-height: 581px;
     }
 
-
-
+  } 
+  .modal__icon-close{
+  transition: fill  cubic-bezier(0.4, 0, 0.2, 1) ;
+  &:hover{
+    fill: #2196F3;
+  } 
   }
   
   .modal__btn-open{
